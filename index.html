@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Email Signature</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+    body {
+      margin: 0;
+      padding: 24px;
+      background: radial-gradient(circle at top left, rgba(31, 143, 95, 0.12), transparent 30%),
+                  linear-gradient(135deg, #f5f9ff 0%, #eef6f2 45%, #f8f4ed 100%);
+      font-family: "Inter", "Segoe UI", Arial, sans-serif;
+      color: #1f2937;
+    }
+
+    .sig-card {
+      position: relative;
+      overflow: hidden;
+      max-width: 500px;
+      background: linear-gradient(135deg, #fcfefd 0%, #f3fbf7 48%, #fdfbf6 100%);
+      border: 1px solid rgba(31, 143, 95, 0.17);
+      border-left: 4px solid #1f8f5f;
+      border-radius: 16px;
+      padding: 14px 16px;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
+    }
+
+    .sig-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 3px;
+      background: linear-gradient(90deg, #1f8f5f 0%, #3ecf7c 100%);
+    }
+
+    .avatar {
+      flex-shrink: 0;
+    }
+
+    .avatar img {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #1f8f5f;
+      box-shadow: 0 8px 18px rgba(31, 143, 95, 0.16);
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .name {
+      margin: 0 0 2px;
+      font-size: 20px;
+      font-weight: 800;
+      color: #142033;
+    }
+
+    .name a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .name a:hover {
+      color: #1f8f5f;
+    }
+
+    .role {
+      margin: 0 0 4px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #2b8a5d;
+    }
+
+    .company {
+      margin: 0 0 8px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #0f6b3f;
+    }
+
+    .meta {
+      font-size: 12px;
+      line-height: 1.6;
+      color: #516173;
+    }
+
+    .meta a {
+      color: #2b8a5d;
+      text-decoration: none;
+    }
+
+    .footer {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid #e7edf3;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #e9f7ef 0%, #d8f0e4 100%);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.7), 0 4px 10px rgba(31, 143, 95, 0.12);
+    }
+
+    .logo img {
+      height: 29px;
+      max-width: 110px;
+      object-fit: contain;
+    }
+
+    .socials {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+    }
+
+    .socials a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #eef8f2;
+      color: #1f8f5f;
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .socials a:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 12px rgba(31, 143, 95, 0.14);
+    }
+
+    @media (max-width: 560px) {
+      body { padding: 12px; }
+      .sig-card { flex-direction: column; align-items: flex-start; }
+      .avatar { margin-bottom: 4px; }
+      .footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <!-- The earlier pasted content is intentionally hidden from the browser view. -->
+
+  <div class="sig-card">
+    <div class="avatar">
+      <a href="https://www.facebook.com/Try.to.be.a.rainbow.in.someones.cloud.M2" target="_blank" rel="noopener noreferrer">
+        <img src="mithu.png" alt="Md. Mithu Rahman" />
+      </a>
+    </div>
+
+    <div class="content">
+      <p class="name"><a href="https://web-developer-mithu.github.io/Md.-Mithu-Rahman_Porfolio/" target="_blank" rel="noopener noreferrer">Md. Mithu Rahman</a></p>
+      <p class="role">General Manager (IT &amp; Operations)</p>
+      <p class="company">SMART SOFT LIMITED</p>
+
+      <div class="meta">
+        <div>📞 <a href="tel:+8801875960149">+880 1875-960149</a></div>
+        <div>✉ <a href="mailto:mdmithurahman40@gmail.com">mdmithurahman40@gmail.com</a></div>
+        <div>🌐 <a href="https://smartsoft.bd">www.smartsoft.bd</a></div>
+        <div>📍 House No-8, Road 17/A, Block-E, Banani, Dhaka</div>
+      </div>
+
+      <div class="footer">
+        <div class="logo">
+          <a href="https://smartsoft.bd" target="_blank" rel="noopener noreferrer">
+            <img src="company.jpg" alt="SMART SOFT LIMITED" />
+          </a>
+        </div>
+
+        <div class="socials">
+          <a href="https://wa.me/8801875960149" target="_blank" rel="noopener noreferrer" title="WhatsApp">W</a>
+          <a href="https://www.facebook.com/Try.to.be.a.rainbow.in.someones.cloud.M2" target="_blank" rel="noopener noreferrer" title="Facebook">f</a>
+          <a href="https://www.linkedin.com/in/web-developer-mithu/" target="_blank" rel="noopener noreferrer" title="LinkedIn">in</a>
+          <a href="mailto:mdmithurahman40@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">@</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+                </table>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
