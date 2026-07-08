@@ -10,8 +10,7 @@
     body {
       margin: 0;
       padding: 24px;
-      background: radial-gradient(circle at top left, rgba(31, 143, 95, 0.12), transparent 30%),
-                  linear-gradient(135deg, #f5f9ff 0%, #eef6f2 45%, #f8f4ed 100%);
+      background: linear-gradient(135deg, #f7fbf8 0%, #eef6f2 100%);
       font-family: "Inter", "Segoe UI", Arial, sans-serif;
       color: #1f2937;
     }
@@ -19,16 +18,18 @@
     .sig-card {
       position: relative;
       overflow: hidden;
-      max-width: 500px;
+      width: 100%;
+      max-width: 430px;
+      box-sizing: border-box;
       background: linear-gradient(135deg, #fcfefd 0%, #f3fbf7 48%, #fdfbf6 100%);
       border: 1px solid rgba(31, 143, 95, 0.17);
-      border-left: 4px solid #1f8f5f;
+      border-left: 3px solid #1f8f5f;
       border-radius: 16px;
-      padding: 14px 16px;
+      padding: 10px 11px;
       display: flex;
-      gap: 14px;
+      gap: 8px;
       align-items: center;
-      box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
+      box-shadow: 0 10px 22px rgba(15, 23, 42, 0.06);
     }
 
     .sig-card::before {
@@ -44,12 +45,12 @@
     }
 
     .avatar img {
-      width: 88px;
-      height: 88px;
+      width: 72px;
+      height: 72px;
       border-radius: 50%;
       object-fit: cover;
       border: 2px solid #1f8f5f;
-      box-shadow: 0 8px 18px rgba(31, 143, 95, 0.16);
+      box-shadow: 0 6px 14px rgba(31, 143, 95, 0.12);
     }
 
     .content {
@@ -58,7 +59,7 @@
 
     .name {
       margin: 0 0 2px;
-      font-size: 20px;
+      font-size: 17px;
       font-weight: 800;
       color: #142033;
     }
@@ -75,7 +76,7 @@
 
     .role {
       margin: 0 0 4px;
-      font-size: 10px;
+      font-size: 8px;
       font-weight: 700;
       letter-spacing: 1.2px;
       text-transform: uppercase;
@@ -84,14 +85,14 @@
 
     .company {
       margin: 0 0 8px;
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 700;
       color: #0f6b3f;
     }
 
     .meta {
-      font-size: 12px;
-      line-height: 1.6;
+      font-size: 10px;
+      line-height: 1.4;
       color: #516173;
     }
 
@@ -111,21 +112,21 @@
     }
 
     .logo {
-      padding: 6px 10px;
+      padding: 5px 8px;
       border-radius: 999px;
       background: linear-gradient(135deg, #e9f7ef 0%, #d8f0e4 100%);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.7), 0 4px 10px rgba(31, 143, 95, 0.12);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
     }
 
     .logo img {
-      height: 29px;
-      max-width: 110px;
+      height: 24px;
+      max-width: 100px;
       object-fit: contain;
     }
 
     .socials {
       display: flex;
-      gap: 5px;
+      gap: 4px;
       align-items: center;
     }
 
@@ -133,8 +134,8 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 22px;
-      height: 22px;
+      width: 20px;
+      height: 20px;
       border-radius: 50%;
       background: #eef8f2;
       color: #1f8f5f;
@@ -147,7 +148,7 @@
 
     .socials a:hover {
       transform: translateY(-1px);
-      box-shadow: 0 6px 12px rgba(31, 143, 95, 0.14);
+      box-shadow: 0 4px 8px rgba(31, 143, 95, 0.12);
     }
 
     @media (max-width: 560px) {
